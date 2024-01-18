@@ -38,6 +38,7 @@ public class EntPayController {
   @ApiOperation(value = "企业付款到零钱")
   @PostMapping("/entPay")
   public EntPayResult entPay(@RequestBody EntPayRequest request) throws WxPayException {
+    //
     return this.wxService.getEntPayService().entPay(request);
   }
 
